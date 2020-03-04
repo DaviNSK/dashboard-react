@@ -3,18 +3,16 @@ import styled from "styled-components";
 export const Head = styled.div`
   display: flex;
   width: 100%;
+  align-items: center;
   height: 55px;
   background-color: #dae8e8;
   padding-left: 55px;
- 
-  .header-tp {
-    display: flex;
-    width: 100%;
-    flex-direction: row;
-    margin: auto;
-    padding: 0 15px;
 
-    p {
+  /* @media (min-width: 320px) and (max-width: 768px) {
+    position: fixed;
+  } */
+
+  p {
     padding: 0 10px;
     font-family: serif;
   }
@@ -30,12 +28,12 @@ export const Head = styled.div`
     color: #b5b8ba;
 
     svg {
-    position: absolute;
-    left: 0px;
-    right: 1px;
-    top: 0;
-    bottom: 2px;
-    margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 1px;
+      top: 0;
+      bottom: 2px;
+      margin: auto;
     }
   }
 
@@ -50,24 +48,26 @@ export const Head = styled.div`
     color: #b5b8ba;
 
     svg {
-    position: absolute;
-    left: 0px;
-    right: 1px;
-    top: 0;
-    bottom: 2px;
-    margin: auto;
+      position: absolute;
+      left: 0px;
+      right: 1px;
+      top: 0;
+      bottom: 2px;
+      margin: auto;
     }
-  }
   }
 `;
 
 export const Search = styled.input`
-display: flex;
-height: 28px;
-margin-left: auto;
-border-radius: 27px;
-border: none;
-padding: 0 20px;
+  display: flex;
+  height: 28px;
+  margin-left: auto;
+  margin-right: 20px;
+  border-radius: 27px;
+  border: none;
+  padding: 0 20px;
 
-
+  ::placeholder {
+    color: #9e9e9e;
+  }
 `;
